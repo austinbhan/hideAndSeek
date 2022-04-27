@@ -52,8 +52,4 @@ function handleGuess(correctSpot, userGuess) {
     winsEl.textContent = correctGuesses;
     totalEl.textContent = totalGuesses;
     lossesEl.textContent = totalGuesses - correctGuesses;
-
-    
-
-    
 }
