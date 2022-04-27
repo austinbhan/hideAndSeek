@@ -40,20 +40,23 @@ function handleGuess(correctSpot, userGuess) {
     treeContainer.classList.remove('face');
     shedContainer.classList.remove('face');
     boulderContainer.classList.remove('face');
-    let losses = totalGuesses - correctGuesses;
-    // Try This Code
+    
+    const answerElement = document.getElementById(`${correctSpot}-container`);
+    totalGuesses++;
     if (userGuess === correctSpot) {
-        winsEl.textContent = correctGuesses += 1;
-        totalEl.textContent = totalGuesses += 1;
+        correctGuesses++;
+        answerElement.classList.add('face');
     } else {
-        lossesEl.textContent = losses += 1;
-        totalEl.textContent = totalGuesses += 1;
+        answerElement.classList.add('face');
     }
+    
+    winsEl.textContent = correctGuesses++;
+    totalEl.textContent = totalGuesses++;
+    lossesEl.textContent = totalGuesses - correctGuesses;
 
-    // then increment the guessesface    totalEl.textContent = totalGuesses += 1;
+    // then increment the guessesface  
 
     // then grab the appropriate container element for the correct guess from the DOM
-
     // then add the face class to that element so that the face shows up
 
     // "if the choice is correct"
