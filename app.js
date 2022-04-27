@@ -57,10 +57,10 @@ function handleGuess(correctSpot, userGuess) {
     // then increment the guessesface  
 
     // then grab the appropriate container element for the correct guess from the DOM
+    
     // then add the face class to that element so that the face shows up
 
     // "if the choice is correct"
-            //treeContainer.classList.add('face');, but how to make it a face on the winner?
 
     // then if the user guess is correct, increment the correct guesses
 
